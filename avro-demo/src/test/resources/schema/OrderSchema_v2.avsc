@@ -1,0 +1,27 @@
+[
+    {
+        "type": "enum",
+        "name": "Sizes",
+        "symbols": ["LARGE", "MIDDLE", "SMALL"]
+    },
+    {
+        "type": "record",
+        "name": "RechnungsPosten",
+        "aliases": ["LineItem"],
+        "fields": [
+            {"name": "name", "type": "string", "default": "coffee"},
+            {"name": "quantity", "type": "int", "default": "1"},
+            {"name": "milk", "type": "boolean", "default": "false"},
+            {"name": "size", "type": "Sizes", "default": "MIDDLE"}
+        ]
+    },
+    {
+        "type": "record",
+        "name": "Bestellung",
+        "aliases": ["Order"],
+        "fields": [
+            {"name": "item", "type": "RechnungsPosten"}
+        ]
+    }
+
+]
