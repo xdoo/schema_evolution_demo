@@ -49,6 +49,11 @@
 	  <groupId>org.springframework.cloud</groupId>
 	  <artifactId>spring-cloud-stream-schema-server</artifactId>
 	 </dependency>
+	 <dependency>
+	  <groupId>commons-io</groupId>
+	  <artifactId>commons-io</artifactId>
+	  <version>2.5</version>
+	 </dependency>
 	</dependencies>
 
 	<dependencyManagement>
