@@ -1,10 +1,10 @@
 [
-    {
+    {   "namespace": "de.muenchen.jfs17",
         "type": "enum",
         "name": "Sizes",
         "symbols": ["LARGE", "MIDDLE", "SMALL"]
     },
-    {
+    {   "namespace": "de.muenchen.jfs17",
         "type": "record",
         "name": "RechnungsPosten",
         "aliases": ["LineItem"],
@@ -15,7 +15,7 @@
             {"name": "size", "type": "Sizes", "default": "MIDDLE"}
         ]
     },
-    {
+    {   "namespace": "de.muenchen.jfs17",
         "type": "record",
         "name": "Bestellung",
         "aliases": ["Order"],
