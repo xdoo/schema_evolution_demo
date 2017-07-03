@@ -3,6 +3,7 @@ package de.muenchen.jfs2017.demoproducer;
 import java.util.List;
 import lombok.Builder;
 import lombok.Data;
+import lombok.Singular;
 
 /**
  *
@@ -11,5 +12,5 @@ import lombok.Data;
 @Data
 @Builder
 public class Order {
-    private List<LineItem> lineItem;
+    @Singular("lineItem") private List<LineItem> lineItem;
 }

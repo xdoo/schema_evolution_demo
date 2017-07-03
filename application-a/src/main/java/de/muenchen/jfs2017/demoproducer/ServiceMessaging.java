@@ -10,6 +10,6 @@ import org.springframework.messaging.MessageChannel;
 public interface ServiceMessaging {
     
     @Output
-    MessageChannel hireEmployeeEvent();
+    MessageChannel orderEvent();
     
 }

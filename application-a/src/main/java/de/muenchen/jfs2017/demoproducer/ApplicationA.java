@@ -10,10 +10,10 @@ import org.springframework.util.MimeType;
 
 @SpringBootApplication
 @EnableBinding(ServiceMessaging.class)
-public class RegistrationApplication {
+public class ApplicationA {
 
     public static void main(String[] args) {
-        SpringApplication.run(RegistrationApplication.class, args);
+        SpringApplication.run(ApplicationA.class, args);
     }
 
     @Bean
