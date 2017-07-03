@@ -1,16 +1,15 @@
 package de.muenchen.jfs2017.democonsumer;
 
 import java.util.List;
-import lombok.Builder;
 import lombok.Data;
-import lombok.Singular;
+import lombok.NoArgsConstructor;
 
 /**
  *
  * @author claus
  */
 @Data
-@Builder
+@NoArgsConstructor
 public class Order {
-    @Singular("lineItem") private List<LineItem> lineItem;
+    private List<LineItem> lineItem;
 }
