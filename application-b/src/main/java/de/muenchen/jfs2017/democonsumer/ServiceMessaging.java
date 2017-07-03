@@ -9,9 +9,9 @@ import org.springframework.messaging.SubscribableChannel;
  */
 public interface ServiceMessaging {
     
-    String HIRE_EMPLOYEE = "hireEmployeeEvent";
+    String ORDER_COFFEE = "orderEvent";
     
-    @Input(HIRE_EMPLOYEE)
-    SubscribableChannel hireEmployeeEvent();
+    @Input(ORDER_COFFEE)
+    SubscribableChannel orderEvent();
     
 }

@@ -12,10 +12,10 @@ import org.springframework.util.MimeType;
 @SpringBootApplication
 @EnableBinding(ServiceMessaging.class)
 @EnableSchemaRegistryClient
-public class BookingApplication {
+public class ApplicationB {
 
     public static void main(String[] args) {
-        SpringApplication.run(BookingApplication.class, args);
+        SpringApplication.run(ApplicationB.class, args);
     }
 
     @Bean
