@@ -6,6 +6,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.Singular;
+import org.springframework.hateoas.ResourceSupport;
 
 /**
  *
@@ -15,6 +16,6 @@ import lombok.Singular;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class Order {
-    @Singular("lineItem") private List<LineItem> lineItems;
+public class OrderResource extends ResourceSupport {
+    @Singular("lineItem") public List<LineItem> lineItems;
 }
