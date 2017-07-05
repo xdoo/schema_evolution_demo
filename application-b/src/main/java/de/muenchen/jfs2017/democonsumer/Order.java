@@ -11,5 +11,5 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 public class Order {
-    private List<LineItem> lineItem;
+    private List<LineItem> lineItems;
 }
